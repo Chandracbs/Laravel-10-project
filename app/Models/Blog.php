@@ -26,4 +26,10 @@ class Blog extends Model
     public function userid(){
         return $this->belongsTo(User::class,'user_id');
     }
+
+    public function catid(){
+        return $this->belongsTo(Category::class,'category_id');
+    }
+
+
 }

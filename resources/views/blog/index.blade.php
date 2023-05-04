@@ -28,7 +28,11 @@
                         <td>{{ $value->title }}</td>
                         <td>{{ $value->slug }}</td>
                         <td>{{ $value->description }}</td>
-                        <td>{{ $value->category_id }}</td>
+                        <td>
+                            @if(!is_null($value->category_id))
+                            {{ $value->catid->name}}
+                            @endif
+                        </td>
                         <td>
                             @if(!is_null($value->user_id))
                             {{ $value->userid->name}}
