@@ -31,7 +31,7 @@
                         <td>{{ $value->category_id }}</td>
                         <td>
                             @if(!is_null($value->user_id))
-                            {{ $value->user_id}}
+                            {{ $value->userid->name}}
                             @endif
                         </td>
                         <td> 
